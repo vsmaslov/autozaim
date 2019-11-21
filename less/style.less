@@ -2,16 +2,11 @@
 @font-face {
   font-family: "P22-Book";
   src: url("../fonts/P22UndergroundCYPro-Book/P22UndergroundCYPro-Book.eot");
-  src: url("../fonts/P22UndergroundCYPro-Book/P22UndergroundCYPro-Book.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/P22UndergroundCYPro-Book/P22UndergroundCYPro-Book.woff2")
-      format("woff2"),
-    url("../fonts/P22UndergroundCYPro-Book/P22UndergroundCYPro-Book.woff")
-      format("woff"),
-    url("../fonts/P22UndergroundCYPro-Book/P22UndergroundCYPro-Book.ttf")
-      format("truetype"),
-    url("../fonts/P22UndergroundCYPro-Book/P22UndergroundCYPro-Book.svg#P22UndergroundCYPro-Book")
-      format("svg");
+  src: url("../fonts/P22UndergroundCYPro-Book/P22UndergroundCYPro-Book.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/P22UndergroundCYPro-Book/P22UndergroundCYPro-Book.woff2") format("woff2"),
+    url("../fonts/P22UndergroundCYPro-Book/P22UndergroundCYPro-Book.woff") format("woff"),
+    url("../fonts/P22UndergroundCYPro-Book/P22UndergroundCYPro-Book.ttf") format("truetype"),
+    url("../fonts/P22UndergroundCYPro-Book/P22UndergroundCYPro-Book.svg#P22UndergroundCYPro-Book") format("svg");
   font-weight: 400;
   font-style: normal;
 }
@@ -19,16 +14,11 @@
 @font-face {
   font-family: "P22-Heavy";
   src: url("../fonts/P22UndergroundCYPro-Heavy/P22UndergroundCYPro-Heavy.eot");
-  src: url("../fonts/P22UndergroundCYPro-Heavy/P22UndergroundCYPro-Heavy.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/P22UndergroundCYPro-Heavy/P22UndergroundCYPro-Heavy.woff2")
-      format("woff2"),
-    url("../fonts/P22UndergroundCYPro-Heavy/P22UndergroundCYPro-Heavy.woff")
-      format("woff"),
-    url("../fonts/P22UndergroundCYPro-Heavy/P22UndergroundCYPro-Heavy.ttf")
-      format("truetype"),
-    url("../fonts/P22UndergroundCYPro-Heavy/P22UndergroundCYPro-Heavy.svg#P22UndergroundCYPro-Heavy")
-      format("svg");
+  src: url("../fonts/P22UndergroundCYPro-Heavy/P22UndergroundCYPro-Heavy.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/P22UndergroundCYPro-Heavy/P22UndergroundCYPro-Heavy.woff2") format("woff2"),
+    url("../fonts/P22UndergroundCYPro-Heavy/P22UndergroundCYPro-Heavy.woff") format("woff"),
+    url("../fonts/P22UndergroundCYPro-Heavy/P22UndergroundCYPro-Heavy.ttf") format("truetype"),
+    url("../fonts/P22UndergroundCYPro-Heavy/P22UndergroundCYPro-Heavy.svg#P22UndergroundCYPro-Heavy") format("svg");
   font-weight: 900;
   font-style: normal;
 }
@@ -36,16 +26,11 @@
 @font-face {
   font-family: "P22-Thin";
   src: url("../fonts/P22UndergroundCYPro-Thin/P22UndergroundCYPro-Thin.eot");
-  src: url("../fonts/P22UndergroundCYPro-Thin/P22UndergroundCYPro-Thin.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/P22UndergroundCYPro-Thin/P22UndergroundCYPro-Thin.woff2")
-      format("woff2"),
-    url("../fonts/P22UndergroundCYPro-Thin/P22UndergroundCYPro-Thin.woff")
-      format("woff"),
-    url("../fonts/P22UndergroundCYPro-Thin/P22UndergroundCYPro-Thin.ttf")
-      format("truetype"),
-    url("../fonts/P22UndergroundCYPro-Thin/P22UndergroundCYPro-Thin.svg#P22UndergroundCYPro-Thin")
-      format("svg");
+  src: url("../fonts/P22UndergroundCYPro-Thin/P22UndergroundCYPro-Thin.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/P22UndergroundCYPro-Thin/P22UndergroundCYPro-Thin.woff2") format("woff2"),
+    url("../fonts/P22UndergroundCYPro-Thin/P22UndergroundCYPro-Thin.woff") format("woff"),
+    url("../fonts/P22UndergroundCYPro-Thin/P22UndergroundCYPro-Thin.ttf") format("truetype"),
+    url("../fonts/P22UndergroundCYPro-Thin/P22UndergroundCYPro-Thin.svg#P22UndergroundCYPro-Thin") format("svg");
   font-weight: 100;
   font-style: normal;
 }
@@ -73,6 +58,23 @@ a {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /*Header*/
@@ -587,9 +589,11 @@ a {
       padding-top: 30px;
       padding-bottom: 30px;
     }
+
     &__form-heading {
       font-size: 18px;
     }
+
     &__form {
       margin-top: 30px;
     }
@@ -602,16 +606,20 @@ a {
       padding-left: 20px;
     }
   }
+
   .advantages {
     padding-top: 30px;
+
     &__item {
       margin-bottom: 30px;
+
       &-text {
         font-size: 14px;
         margin-top: 15px;
       }
     }
   }
+
   .footer {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -624,57 +632,71 @@ a {
       font-size: 14px;
       margin-top: 15px;
     }
+
     &__form {
       width: 100%;
     }
+
     &__form-box {
       margin-top: 0;
     }
+
     &__form label {
       display: none;
     }
+
     &__form input {
       padding-left: 20px;
     }
   }
 }
+
 @media (max-width: 412px) {
   .header {
     &__top-wrap {
       padding-top: 30px;
     }
+
     &__logo {
       display: flex;
       justify-content: center;
     }
+
     &__logo-img {
       display: none;
     }
+
     &__logo-text {
       text-align: center;
       margin-left: 0;
     }
+
     &__contacts {
       width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
     }
+
     &__request {
       display: block;
     }
+
     &__phone {
       margin-left: 0;
     }
+
     &__form {
       padding-left: 5px;
       padding-right: 5px;
     }
+
     &__form input {
       width: 100%;
       margin: 0;
       margin-bottom: 10px;
     }
+
     &__form-btn {
       width: 100%;
       margin-left: 5px;
@@ -683,13 +705,16 @@ a {
       padding-right: 50px;
     }
   }
+
   .footer {
     &__form-box {
       padding: 20px 5px 20px 5px;
     }
+
     &__form input {
       width: 100%;
     }
+
     &__form-btn {
       width: 100%;
     }
